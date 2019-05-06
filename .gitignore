@@ -7,5 +7,4 @@ logs
 #We don't want to share settings, task configuration and debug configuration 
 .vscode
 
-#We don't want push the secured env file
-secured/.env
+
