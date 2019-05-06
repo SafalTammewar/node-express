@@ -6,7 +6,7 @@
   "scripts": {
     "EXPRESS": "#################Express-commands#################",
     "devpcmode": "nodemon --max-old-space-size=3072 ./bin/www DECPC",
-    "devservermode": "node ./bin/www DEVSERVER",
+    "start": "node ./bin/www DEVSERVER",
     "prodservermode": "node ./bin/www PRODSERVER",
     "TESTING": "#################Express-Testing-commands#################",
     "test": "mocha \"./{,!(node_modules)/**/}*.test.js\"",
