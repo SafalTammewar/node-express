@@ -49,7 +49,7 @@ app.use(require('./middlewares/default.middleware'));
 app.use(require('./middlewares/auth.middleware'));
 
 // root route
-app.use(`/${process.env.APIVERSION}`, apiRouter);
+app.use(`/${process.env.APIVERSION}/api`, apiRouter);
 apiRouter.use(`/ping`, pingRoute);
 
 swaggerTools.initializeMiddleware(swaggerSpec, (swaggerMiddleware) => {
