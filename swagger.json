@@ -9,6 +9,12 @@
             "email": "hiraji@compumatrice.com"
         }
     },
+    "host": "petstore.swagger.io",
+	"basePath": "/v2",
+	"schemes": [
+        "http",
+		"https"
+	],
     "produces": [
         "application/json"
     ],
