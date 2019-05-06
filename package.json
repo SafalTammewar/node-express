@@ -1,0 +1,52 @@
+{
+  "name": "basic-node-structure",
+  "version": "0.0.1",
+  "description": "Web API",
+  "main": "server.js",
+  "scripts": {
+    "EXPRESS": "#################Express-commands#################",
+    "devpcmode": "nodemon --max-old-space-size=3072 ./bin/www DECPC",
+    "devservermode": "node ./bin/www DEVSERVER",
+    "prodservermode": "node ./bin/www PRODSERVER",
+    "TESTING": "#################Express-Testing-commands#################",
+    "test": "mocha \"./{,!(node_modules)/**/}*.test.js\"",
+    "test-watch": "nodemon --exec \"npm test\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "Repo URL"
+  },
+  "keywords": [
+    "rest",
+    "api"
+  ],
+  "author": "Development Team",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/",
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.5",
+    "crypto-js": "^3.1.9-1",
+    "dotenv": "^6.1.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "joi": "^14.3.1",
+    "jsonwebtoken": "^8.4.0",
+    "lodash": "^4.17.11",
+    "moment": "^2.22.2",
+    "moment-timezone": "^0.5.23",
+    "morgan": "^1.9.1",
+    "object-mapper": "^5.0.0",
+    "pg": "^7.7.1",
+    "request": "^2.88.0",
+    "schema-object": "^4.0.11",
+    "swagger-tools": "^0.10.4",
+    "uuid": "^3.3.2",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.7",
+    "supertest": "^4.0.2"
+  }
+}
