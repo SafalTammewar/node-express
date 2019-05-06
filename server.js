@@ -54,11 +54,12 @@ apiRouter.use(`/ping`, pingRoute);
 
 swaggerTools.initializeMiddleware(swaggerSpec, (swaggerMiddleware) => {
   swaggerSpec.basePath = `/${process.env.APIVERSION}/api`;
-  apiRouter.use(swaggerMiddleware.swaggerUi({
-    apiDocs: `/api-docs`,
-    swaggerUi: `/docs`,
+  // apiRouter.use(swaggerMiddleware.swaggerUi({
+  //   apiDocs: `/api-docs`,
+  //   swaggerUi: `/docs`,
     
-  }));
+  // }));
+  apiRouter.use(swaggerMiddleware.swaggerUi());
 
   logger.info(`Swagger UI is serving at: /${process.env.APIVERSION}/docs`);
 });
